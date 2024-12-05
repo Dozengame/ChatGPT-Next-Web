@@ -1427,6 +1427,7 @@ export function Settings() {
             </Popover>
           </ListItem>
 
+          {/*
           <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
@@ -1459,6 +1460,8 @@ export function Settings() {
               />
             )}
           </ListItem>
+          */}
+
 
           <ListItem title={Locale.Settings.SendKey}>
             <Select
