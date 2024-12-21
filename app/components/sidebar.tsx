@@ -179,9 +179,9 @@ export function SideBarHeader(props: {
       >
         <div className={styles["sidebar-title-container"]}>
           <div className={styles["sidebar-title"]} data-tauri-drag-region>
-            StarAI
+            {title}
           </div>
-          <div className={styles["sidebar-sub-title"]}>欢迎使用StarAI，即刻构建您的专属助理。</div>
+          <div className={styles["sidebar-sub-title"]}>{subTitle}</div>
         </div>
         <div className={clsx(styles["sidebar-logo"], "no-dark")}>{logo}</div>
       </div>
@@ -209,12 +209,10 @@ export function SideBarTail(props: {
   const { primaryAction, secondaryAction } = props;
 
   return (
-   {/*
     <div className={styles["sidebar-tail"]}>
       <div className={styles["sidebar-actions"]}>{primaryAction}</div>
       <div className={styles["sidebar-actions"]}>{secondaryAction}</div>
     </div>
-    */}
   );
 }
 
